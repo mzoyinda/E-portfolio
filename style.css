@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font: inherit;
+    vertical-align: baseline;
+    min-height: 100vh;
+}
+
+*{
+    text-decoration: none;
+}
+h1{
+    font-size: 4.5vmin;
+    font-weight: normal;
+}
+h2 {
+    font-size: 4vmin;
+}
+h3 {
+    font-size: 3.5vmin;
+}
+p{
+    font-size: 2.5vmin;
+}
+article{
+    box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
+}
+
+#nav{
+    background-color: #282828;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+#nav ul{
+    padding: 14px;
+    justify-content: center;
+    align-content: center;
+}
+#nav li {
+    display: inline-block;
+    text-align: center;
+    justify-content: space-between;
+}
+#nav li a{
+    color: #fff;
+    font-size: 3.5vmin;
+    font-weight: 600;
+    /* padding: 17px 20px; */
+    border-radius: 8px;
+    color: #fff;
+}
+#nav li+li{
+    margin-left: 30px;
+}
+#nav li a:hover{
+    background-color: rgb(88, 85, 85);
+    padding: 15px 1px;
+}
+
+#top{
+    padding-top: 20vmin;
+    justify-content: center;
+    align-content: center;
+    min-height: 70vh;
+}
+.Container{
+    padding-bottom: 8vmin;  
+}
+.heroContainer{
+    margin: 0px auto;
+    min-height: 50vh;
+    padding-bottom: 8vmin;
+}
+
+.bio{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.bio header{
+    width: 100%;
+   
+}
+.bio p{
+    font-size: 3vmin;
+    margin-bottom:7vmin;
+}
+.image{
+    align-self: center;
+    justify-content: center;
+}
+
+.image img {
+    display: block;
+    width: 50vmin;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+.learnButton{
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 50%), inset 0px 2px 1px 0px rgb(255 255 255 / 75%);
+    background-color: #43B3E0;
+    color: white;
+    border-radius: 5px;
+    font-size: 3.5vmin;
+    padding: 10px;
+    margin-bottom: 40vmin;
+}
+#work{
+    background-color: #fafafa;
+    text-shadow: 1px 1px 0px #fff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 7vmin;
+}
+
+.cards {
+    margin: 30px 50px;
+    }
+.portfolioCards{
+    margin: 30px 50px;
+} 
+
+.card {
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+margin-bottom: 3vmin;
+}
+
+#portfolio{
+    background-color: #f4f4f4;
+    text-shadow: 1px 1px 0px #fff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 7vmin;
+}
+#contact{
+    background-color: #e7e7e7;
+    font-family: 'Open Sans', sans-serif;
+    margin: 7vmin 0px;
+}
+
+.todo {
+    height: 200px;
+    }
+
+.tools{
+    width: 250px;
+    height: 180px;
+}
+
+
+.projectImg{
+    transition: all 0.5s;
+}
+    .projectImg:hover{
+opacity: 0.6;
+font-size: 2vmin;
+    }
+
+.slide {
+    width: 80%;
+    height: 80vmin;
+}
+
+.social li{
+display: inline-block;
+}
+
+.social li+li{
+    margin-left: 8vmin;
+}
+
+.social li a{
+    font-size: 9vmin;
+ color: black;
+ transition: all 0.5s;
+}
+
+.social li a:hover{
+    font-size: 8vmin;
+    color: rgba(5, 5, 5, 0.712);
+}
+
+.footer{
+    clear:both;
+    position:relative;
+    bottom: 0;
+    margin-top: 30vmin;
+    background-color: black;
+    padding: 5px;
+}
+@media screen and (max-width: 350px) {
+    .tools, .projectImg img{
+        width: 180px;
+    }
+}
+@media screen and (min-width: 750px) {
+    .projectImg img{
+        width: 250px;
+    }
+    #work{
+        background-color: #fafafa;
+        text-shadow: 1px 1px 0px #fff;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 7vmin;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 5px;
+        margin: auto 30px;
+        }
+    .portfolioCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 5px;
+        margin: auto 30px;
+    } 
+    
+    .card {
+        border: 2px solid #e7e7e7;
+        border-radius: 4px;
+        padding: .5rem;
+    }
+    .projectImg img{
+        width: auto;
+    }
+    .slide {
+        width: 60%;
+        height: 80vmin;
+    }
+    .social li+li{
+        margin-left: 10vmin;
+    }
+    
+  
+}
+
+@media screen and (min-width: 1050px) {
+    .heroContainer{
+        display: grid;
+        margin: 0px auto;
+        min-height: 50vh;
+        grid-template-columns: 5% repeat(1, 1fr 2fr)5%;
+    }
+     .image{
+        grid-column: 2/3;
+    }
+    .image img {
+        display: block;
+        width: 52vmin;
+        align-self: flex-end;
+        float:right;
+        border-radius: 50%;
+    }
+    
+    .bio{
+        grid-column: 3/4;
+        align-self: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .bio header{
+        width: 100%;
+       
+    }
+    .bio p{
+        font-size: 3vmin;
+        margin-bottom:7vmin;
+    }
+
+    #top{
+        padding-top: 0vmin;
+    }
+
+    #nav li+li{
+        margin-left: 50px;
+    }
+    .heroContainer{
+        height: 100vh;
+    }
+
+    .question{
+        padding-top: 5vmin;
+    }
+
+#work{
+        background-color: #fafafa;
+        text-shadow: 1px 1px 0px #fff;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 7vmin;
+}
+.Container{
+    min-height: 100vh;
+    padding-bottom: 0vmin;
+}
+.cards {
+    display: grid;
+    width: 80%;
+    margin: 0px auto;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-rows: auto; */
+    grid-gap: 2vmin;
+    }
+    .portfolioCards{
+        display: grid;
+        width: 70%;
+        margin: 0px auto;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-auto-rows: auto; */
+        grid-gap: 2vmin;
+    } 
+    .card {
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 1vmin;
+    }
+
+    #portfolio{
+        background-color: #f4f4f4;
+        text-shadow: 1px 1px 0px #fff;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 7vmin;
+    }
+    .slide {
+        width: 32%;
+        height: 75vmin;
+    }
+}
