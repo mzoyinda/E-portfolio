@@ -110,7 +110,6 @@ article{
     border-radius: 50%;
 }
 .learnButton{
-    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 50%), inset 0px 2px 1px 0px rgb(255 255 255 / 75%);
     background-color: #43B3E0;
     color: white;
     border-radius: 5px;
@@ -154,13 +153,11 @@ margin-bottom: 3vmin;
     justify-content: center;
 }
 
-.todo {
-    height: 300px !important;
-    }
+
 
 .projectImg img, .tools{
     width: 40vmin;
-    height: 180px;
+    height: 150px;
 }
 
 
@@ -208,10 +205,9 @@ display: inline-block;
     padding: 5px;
 }
 @media screen and (max-width: 350px) {
-
-    .tools, .projectImg img{
-        width: 55vmin !important;
-        height: 150px !important;
+    .projectImg img, .tools{
+        width: 45vmin;
+        height: 100px;
     }
     .cards, .portfolioCards{
         margin: auto 20px !important;
@@ -233,9 +229,9 @@ display: inline-block;
         align-content: center;
         min-height: max-content;
     }
-    .tools, .projectImg img{
-        width: 50vmin;
-        height: 280px;
+    .projectImg img, .tools{
+        width: 42vmin;
+        height: 180px;
     }
     #work{
         background-color: #fafafa;
@@ -305,8 +301,8 @@ display: inline-block;
         border-radius: 50%;
     }
     .projectImg img, .tools{
-     width: auto;
-   height: auto;
+        width: 45vmin;
+        height: 280px;
     }
     .bio{
         grid-column: 3/4;
