@@ -295,14 +295,16 @@ display: inline-block;
     }
     .image img {
         display: block;
-        width: 52vmin;
+        width: 55vmin;
         align-self: flex-end;
         float:right;
         border-radius: 50%;
     }
     .projectImg img, .tools{
-        width: 45vmin;
-        height: 280px;
+        height: 300px;
+    }
+    .todo{
+        height: 320px;
     }
     .bio{
         grid-column: 3/4;
