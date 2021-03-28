@@ -15,6 +15,10 @@ html,body{
 *{
     text-decoration: none;
 }
+ul{
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+}
 h1{
     font-size: 4.5vmin;
     font-weight: normal;
@@ -42,7 +46,6 @@ article{
     font-family: 'Open Sans', sans-serif;
 }
 #nav ul{
-    padding: 14px;
     justify-content: center;
     align-content: center;
 }
@@ -51,16 +54,16 @@ article{
     text-align: center;
     justify-content: space-between;
 }
+#nav li+li{
+    margin-left: 20px;
+}
 #nav li a{
     color: #fff;
-    font-size: 3.5vmin;
+    font-size: 2vmin;
     font-weight: 600;
     /* padding: 17px 20px; */
     border-radius: 8px;
     color: #fff;
-}
-#nav li+li{
-    margin-left: 30px;
 }
 #nav li a:hover{
     background-color: rgb(88, 85, 85);
@@ -71,15 +74,15 @@ article{
     padding-top: 20vmin;
     justify-content: center;
     align-content: center;
-    min-height: 70vh;
+    min-height: max-content;
 }
 .Container{
     padding-bottom: 8vmin;  
 }
 .heroContainer{
     margin: 0px auto;
-    min-height: 50vh;
-    padding-bottom: 8vmin;
+    min-height: 20vh;
+    padding: 8vmin 0px;
 }
 
 .bio{
@@ -145,15 +148,17 @@ margin-bottom: 3vmin;
 #contact{
     background-color: #e7e7e7;
     font-family: 'Open Sans', sans-serif;
-    margin: 7vmin 0px;
+    margin: 7vmin auto;
+    text-align: center;
+    justify-content: center;
 }
 
 .todo {
-    height: 200px;
+    height: 300px !important;
     }
 
-.tools{
-    width: 250px;
+.projectImg img, .tools{
+    width: 40vmin;
     height: 180px;
 }
 
@@ -171,12 +176,15 @@ font-size: 2vmin;
     height: 80vmin;
 }
 
+.social{
+    margin: 0px auto;
+}
 .social li{
 display: inline-block;
 }
 
 .social li+li{
-    margin-left: 8vmin;
+    margin-left: 6vmin;
 }
 
 .social li a{
@@ -199,13 +207,34 @@ display: inline-block;
     padding: 5px;
 }
 @media screen and (max-width: 350px) {
+
     .tools, .projectImg img{
-        width: 180px;
+        width: 55vmin !important;
+        height: 150px !important;
     }
+    .cards, .portfolioCards{
+        margin: auto 20px !important;
+    }
+ 
 }
 @media screen and (min-width: 750px) {
-    .projectImg img{
-        width: 250px;
+    #nav li+li{
+        margin-left: 30px;
+    }
+    #nav ul{
+        padding: 14px;
+        justify-content: center;
+        align-content: center;
+    }
+    #top{
+        padding-top: 20vmin;
+        justify-content: center;
+        align-content: center;
+        min-height: max-content;
+    }
+    .tools, .projectImg img{
+        width: 50vmin;
+        height: 280px;
     }
     #work{
         background-color: #fafafa;
@@ -235,9 +264,12 @@ display: inline-block;
         border-radius: 4px;
         padding: .5rem;
     }
-    .projectImg img{
-        width: auto;
+    .heroContainer{
+        margin: 0px auto;
+        min-height: 50vh;
+        padding-bottom: 8vmin;
     }
+    
     .slide {
         width: 60%;
         height: 80vmin;
@@ -250,6 +282,11 @@ display: inline-block;
 }
 
 @media screen and (min-width: 1050px) {
+    #nav ul{
+        padding: 14px;
+        justify-content: center;
+        align-content: center;
+    }
     .heroContainer{
         display: grid;
         margin: 0px auto;
@@ -266,7 +303,10 @@ display: inline-block;
         float:right;
         border-radius: 50%;
     }
-    
+    .projectImg img, .tools{
+     width: auto;
+   height: auto;
+    }
     .bio{
         grid-column: 3/4;
         align-self: center;
@@ -283,6 +323,7 @@ display: inline-block;
 
     #top{
         padding-top: 0vmin;
+        
     }
 
     #nav li+li{
