@@ -301,7 +301,8 @@ display: inline-block;
         border-radius: 50%;
     }
     .projectImg img, .tools{
-        height: 300px;
+        width: auto;
+        height: auto;
     }
     .todo{
         height: 320px;
