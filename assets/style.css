@@ -48,6 +48,7 @@ article{
 #nav ul{
     justify-content: center;
     align-content: center;
+    margin: 10px;
 }
 #nav li {
     display: inline-block;
@@ -59,7 +60,7 @@ article{
 }
 #nav li a{
     color: #fff;
-    font-size: 2vmin;
+    font-size: 3vmin;
     font-weight: 600;
     /* padding: 17px 20px; */
     border-radius: 8px;
