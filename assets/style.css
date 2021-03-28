@@ -305,7 +305,7 @@ display: inline-block;
         height: auto;
     }
     .todo{
-        height: 320px;
+        height: 250px !important;
     }
     .bio{
         grid-column: 3/4;
