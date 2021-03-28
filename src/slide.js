@@ -3,13 +3,13 @@ var images = [];	// Images Array
 var time = 3000;	// Time Between Switch
 	 
 // Image List
-images[0] = "/yellow.jpeg";
-images[1] = "/jean.jpg";
-images[2] = "/guys.jpg";
-images[3] = "/jersey.jpg";
-images[4] = "/girls.jpg";
-images[5] = "/waste.jpg";
-images[6] = "/shirt.jpg";
+images[0] = "../public/yellow.jpeg";
+images[1] = "../public/jean.jpg";
+images[2] = "../public/guys.jpg";
+images[3] = "../public/jersey.jpg";
+images[4] = "../public/girls.jpg";
+images[5] = "../public/waste.jpg";
+images[6] = "../public/shirt.jpg";
 
 
 // Change Image
